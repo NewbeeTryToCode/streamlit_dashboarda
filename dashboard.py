@@ -43,7 +43,7 @@ def create_byweather_df(df):
     }, inplace=True)
     return byweather_df
 
-df = pd.read_csv('./bikeshare-dataset/hour.csv')
+df = pd.read_csv('./hour.csv')
 df['dteday'] = pd.to_datetime(df['dteday'])
 
 min_date = df["dteday"].min()
